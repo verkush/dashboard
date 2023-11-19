@@ -1,5 +1,5 @@
 import LoginForm from "../components/LoginForm";
-import LoginBg from "../../public/assets/img/sideimg.jpg";
+import LoginBg from "../assets/img/sideimg.jpg";
 
 const LoginPage = () => {
   return (
