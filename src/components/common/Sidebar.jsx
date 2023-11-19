@@ -39,12 +39,15 @@ function classNames(...classes) {
 
 const Sidebar = () => {
   return (
-    <div className="xl:h-[100vh] flex grow flex-col gap-y-5 overflow-y-scroll border-r border-gray-200 bg-white px-6 no-scrollbar fixed xl:static w-full h-full -left-full top-0">
+    <div
+      className="xl:h-[100vh] flex grow flex-col gap-y-5 overflow-y-scroll border-r
+     border-gray-200 bg-white px-6 no-scrollbar fixed xl:static w-full h-full -left-full top-0"
+    >
       <div className="flex h-16 shrink-0 items-center">
         <img
           className="h-8 w-auto"
-          src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-          alt="Your Company"
+          src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
+          alt="HSE FW Dashboard"
         />
       </div>
       <nav className="flex flex-1 flex-col">
@@ -57,16 +60,16 @@ const Sidebar = () => {
                     href={item.href}
                     className={classNames(
                       item.current
-                        ? "bg-gray-50 text-indigo-600"
-                        : "text-gray-700 hover:text-indigo-600 hover:bg-gray-50",
+                        ? "bg-gray-50 text-blue-600"
+                        : "text-gray-700 hover:text-blue-600 hover:bg-gray-50",
                       "group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
                     )}
                   >
                     <item.icon
                       className={classNames(
                         item.current
-                          ? "text-indigo-600"
-                          : "text-gray-400 group-hover:text-indigo-600",
+                          ? "text-blue-600"
+                          : "text-gray-400 group-hover:text-blue-600",
                         "h-6 w-6 shrink-0"
                       )}
                       aria-hidden="true"
@@ -96,16 +99,16 @@ const Sidebar = () => {
                     href={team.href}
                     className={classNames(
                       team.current
-                        ? "bg-gray-50 text-indigo-600"
-                        : "text-gray-700 hover:text-indigo-600 hover:bg-gray-50",
+                        ? "bg-gray-50 text-blue-600"
+                        : "text-gray-700 hover:text-blue-600 hover:bg-gray-50",
                       "group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
                     )}
                   >
                     <span
                       className={classNames(
                         team.current
-                          ? "text-indigo-600 border-indigo-600"
-                          : "text-gray-400 border-gray-200 group-hover:border-indigo-600 group-hover:text-indigo-600",
+                          ? "text-blue-600 border-blue-600"
+                          : "text-gray-400 border-gray-200 group-hover:border-blue-600 group-hover:text-blue-600",
                         "flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border text-[0.625rem] font-medium bg-white"
                       )}
                     >
@@ -128,7 +131,7 @@ const Sidebar = () => {
                 alt=""
               />
               <span className="sr-only">Your profile</span>
-              <span aria-hidden="true">Tom Cook</span>
+              <span aria-hidden="true">Ayush Kumar Verma</span>
             </a>
           </li>
         </ul>
